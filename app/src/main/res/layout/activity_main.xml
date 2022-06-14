@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fond"
+    tools:context="MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#BC000000"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="Calculatrice" />
+
+        <EditText
+            android:id="@+id/editNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Nombre 1"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ffffff"/>
+
+        <EditText
+            android:id="@+id/editNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Nombre 2"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#ffffff"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/twitter"
+                android:backgroundTint="#2b3bcc"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/twitter"
+                android:backgroundTint="#2bcccc"
+                android:text="-"
+                android:layout_marginLeft="6dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/twitter"
+                android:backgroundTint="#83cc2b"
+                android:text="/"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/twitter"
+                android:backgroundTint="#F44336"
+                android:text="x"
+                android:layout_marginLeft="6dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
